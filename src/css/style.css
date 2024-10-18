@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    height: 100vh; /* Altura total da viewport */
+    width: 100vw; /* Largura total da viewport */
+}
+
+main > aside {
+    width: 50vw; /* Ocupa metade exata da largura da tela */
+    background-color: #e9e9e9; /* Fundo mais escuro */
+    color: #000000; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 73px; /* Espaçamento interno */
+}
+
+main > div {
+    width: 50vw; /* Ocupa metade exata da largura da tela */
+    background-color: #ffffff; /* Fundo claro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 40px; /* Espaçamento interno */
+}
+
+h1, .subtitulo {
+    margin-bottom: 10px; /* Espaçamento abaixo dos títulos */
+    text-align: center; /* Centraliza o texto */
+}
+
+
+/* Centraliza o conteúdo da parte esquerda */
+main > aside > div {
+    max-width: 438px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Texto e subtítulo */
+h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.subtitulo {
+    font-size: 16px;
+    font-weight: 300;
+    color: #868383;
+    line-height: 200%;
+}
+
+label {
+    color: #868383;
+}
+
+/* Formulário */
+.formulario {
+    max-width: 489px;
+}
+
+.formulario > div {
+    margin-bottom: 32px;
+}
+
+progress {
+    border: 0;
+    width: 100%;
+    height: 4px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #c8c6c6;
+}
+
+progress::-webkit-progress-value {
+    background-color: #04aa6d;
+}
+
+/* Progresso */
+.progresso label {
+    font-size: 14px;
+    color: #363434;
+}
+
+.progresso label.completo {
+    color: #04aa6d;
+    font-weight: bold;
+}
+
+/* Campos de formulário */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #c8c6c6;
+    height: 54px;
+    padding: 8px;
+    outline: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+    border-bottom: 1px solid #820ad1;
+}
+
+input[type="checkbox"] {
+    accent-color: #820ad1;
+}
+
+/* Botão de exibir senha */
+.mostra-senha {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    text-align: right;
+    outline: none;
+}
+
+.mostra-senha:focus {
+    outline: none;
+}
+
+
+/* Seção de termos */
+.termos {
+    align-items: baseline;
+    gap: 16px;
+}
+
+.termos > label {
+    line-height: 200%;
+}
+
+/* Botão de enviar */
+button.botao {
+    background-color: #820ad1;
+    border-radius: 100px;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 0;
+    width: 100%;
+}
+
+button.botao[disabled] {
+    background-color: #b4adad;
+    color: #868383;
+}
